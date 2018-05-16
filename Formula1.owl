@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dawid/ontologies/2017/3/formula1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dawid/ontologies/2017/3/formula1">
+    <Prefix name="" IRI="http://www.semanticweb.org/dawid/ontologies/2017/3/formula1#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Formula2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abu_Dhabi_Grand_Prix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TeamID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brazilian_Grand_Prix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F12012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renault"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Particitians"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RaceID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F12016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F12014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercedes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F12013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nico_Rosberg"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_States_Grand_Prix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sebastian_Vettel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indian_Grand_Prix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F12015"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DriverID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Winner"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Formula1"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formula2"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#Abu_Dhabi_Grand_Prix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#Brazilian_Grand_Prix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula1"/>
+        <NamedIndividual IRI="#F12012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula1"/>
+        <NamedIndividual IRI="#F12013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula1"/>
+        <NamedIndividual IRI="#F12014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula1"/>
+        <NamedIndividual IRI="#F12015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Formula1"/>
+        <NamedIndividual IRI="#F12016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#Indian_Grand_Prix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Nico_Rosberg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Renault"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Driver"/>
+        <NamedIndividual IRI="#Sebastian_Vettel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#United_States_Grand_Prix"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12012"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12012"/>
+        <NamedIndividual IRI="#Renault"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Race"/>
+        <NamedIndividual IRI="#F12012"/>
+        <NamedIndividual IRI="#Brazilian_Grand_Prix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Winner"/>
+        <NamedIndividual IRI="#F12012"/>
+        <NamedIndividual IRI="#Sebastian_Vettel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12013"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12013"/>
+        <NamedIndividual IRI="#Renault"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Race"/>
+        <NamedIndividual IRI="#F12013"/>
+        <NamedIndividual IRI="#Indian_Grand_Prix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Winner"/>
+        <NamedIndividual IRI="#F12013"/>
+        <NamedIndividual IRI="#Sebastian_Vettel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12014"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Race"/>
+        <NamedIndividual IRI="#F12014"/>
+        <NamedIndividual IRI="#Abu_Dhabi_Grand_Prix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Winner"/>
+        <NamedIndividual IRI="#F12014"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12015"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Race"/>
+        <NamedIndividual IRI="#F12015"/>
+        <NamedIndividual IRI="#United_States_Grand_Prix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Winner"/>
+        <NamedIndividual IRI="#F12015"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12016"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Particitians"/>
+        <NamedIndividual IRI="#F12016"/>
+        <NamedIndividual IRI="#Renault"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Race"/>
+        <NamedIndividual IRI="#F12016"/>
+        <NamedIndividual IRI="#Abu_Dhabi_Grand_Prix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Winner"/>
+        <NamedIndividual IRI="#F12016"/>
+        <NamedIndividual IRI="#Nico_Rosberg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Team"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Team"/>
+        <NamedIndividual IRI="#Nico_Rosberg"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Team"/>
+        <NamedIndividual IRI="#Sebastian_Vettel"/>
+        <NamedIndividual IRI="#Renault"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RaceID"/>
+        <NamedIndividual IRI="#Abu_Dhabi_Grand_Prix"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RaceID"/>
+        <NamedIndividual IRI="#Brazilian_Grand_Prix"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RaceID"/>
+        <NamedIndividual IRI="#Indian_Grand_Prix"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DriverID"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TeamID"/>
+        <NamedIndividual IRI="#Mercedes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DriverID"/>
+        <NamedIndividual IRI="#Nico_Rosberg"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TeamID"/>
+        <NamedIndividual IRI="#Renault"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DriverID"/>
+        <NamedIndividual IRI="#Sebastian_Vettel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RaceID"/>
+        <NamedIndividual IRI="#United_States_Grand_Prix"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Winner"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Winner"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DriverID"/>
+        <Class IRI="#Driver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RaceID"/>
+        <Class IRI="#Race"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TeamID"/>
+        <Class IRI="#Team"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#DriverID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RaceID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TeamID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

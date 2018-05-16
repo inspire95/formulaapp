@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Formula1.FXMLDocumentController">
+   <children>
+      <MenuBar prefHeight="20.0" prefWidth="900.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="open" mnemonicParsing="false" text="Open Data From .txt" />
+                  <MenuItem fx:id="Save" mnemonicParsing="false" text="Save" />
+              <MenuItem fx:id="Close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="About" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.24053452115812918" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="900.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #E60501;">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="50.0" fitWidth="215.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="F1SidePane" layoutY="50.0" prefHeight="475.0" prefWidth="213.0" style="-fx-background-color: #E60501;">
+                     <children>
+                        <Button fx:id="F1add" layoutX="64.0" layoutY="389.0" mnemonicParsing="false" text="DODAJ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="48.0" prefHeight="99.0" prefWidth="115.0" text="NOWY WYŚCIG FORMUŁA 1" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="F1partip" layoutX="7.0" layoutY="312.0" prefHeight="70.0" prefWidth="200.0" />
+                        <Label layoutX="69.0" layoutY="293.0" text="UCZESTNICY">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="94.0" layoutY="99.0" text="ROK">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="F1race" layoutX="32.0" layoutY="245.0" prefWidth="150.0" />
+                        <TextField fx:id="F1year" layoutX="74.0" layoutY="118.0" prefHeight="25.0" prefWidth="66.0" />
+                        <Label layoutX="95.0" layoutY="226.0" text="TOR">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="168.0" text="ZWYCIEZCA">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="F1winner" layoutX="31.0" layoutY="187.0" prefWidth="150.0" />
+                     </children></Pane>
+                  <Pane fx:id="F2SidePane" layoutY="50.0" prefHeight="475.0" prefWidth="213.0" style="-fx-background-color: #E60501;">
+                     <children>
+                        <Button fx:id="F2add" layoutX="64.0" layoutY="389.0" mnemonicParsing="false" text="DODAJ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="48.0" prefHeight="99.0" prefWidth="115.0" text="NOWY WYŚCIG FORMUŁA 2" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="F2partip" layoutX="7.0" layoutY="312.0" prefHeight="70.0" prefWidth="200.0" />
+                        <Label layoutX="69.0" layoutY="293.0" text="UCZESTNICY">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="94.0" layoutY="99.0" text="ROK">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="F2race" layoutX="32.0" layoutY="245.0" prefWidth="150.0" />
+                        <TextField fx:id="F2year" layoutX="74.0" layoutY="118.0" prefHeight="25.0" prefWidth="66.0" />
+                        <Label layoutX="95.0" layoutY="226.0" text="TOR">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="168.0" text="ZWYCIEZCA">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="F2winner" layoutX="31.0" layoutY="187.0" prefWidth="150.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="TeamsSidePane" layoutY="50.0" prefHeight="475.0" prefWidth="213.0" style="-fx-background-color: #E60501;">
+                     <children>
+                        <Button fx:id="TeamsAdd" layoutX="63.0" layoutY="260.0" mnemonicParsing="false" text="DODAJ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="48.0" prefHeight="99.0" prefWidth="115.0" text="NOWY TEAM" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="101.0" layoutY="99.0" text="ID">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="TeamsID" layoutX="74.0" layoutY="118.0" prefHeight="25.0" prefWidth="66.0" />
+                        <TextField fx:id="TeamsNazwa" layoutX="55.0" layoutY="198.0" prefHeight="25.0" prefWidth="105.0" />
+                        <Label layoutX="82.0" layoutY="179.0" text="NAZWA">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="DriversSidePane" layoutY="50.0" prefHeight="475.0" prefWidth="213.0" style="-fx-background-color: #E60501;">
+                     <children>
+                        <Button fx:id="DriverAdd" layoutX="63.0" layoutY="323.0" mnemonicParsing="false" text="DODAJ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="48.0" prefHeight="99.0" prefWidth="115.0" text="NOWY ZAWODNIK" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="101.0" layoutY="99.0" text="ID">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="DriverID" layoutX="74.0" layoutY="118.0" prefHeight="25.0" prefWidth="66.0" />
+                        <TextField fx:id="DriverName" layoutX="55.0" layoutY="198.0" prefHeight="25.0" prefWidth="105.0" />
+                        <Label layoutX="82.0" layoutY="179.0" text="NAZWA">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="DriverTeam" layoutX="42.0" layoutY="265.0" prefHeight="25.0" prefWidth="130.0" />
+                        <Label layoutX="90.0" layoutY="246.0" text="TEAM">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="RaceSidePane" layoutY="50.0" prefHeight="475.0" prefWidth="213.0" style="-fx-background-color: #E60501;">
+                     <children>
+                        <Button fx:id="RaceAdd" layoutX="64.0" layoutY="266.0" mnemonicParsing="false" text="DODAJ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="61.0" prefHeight="99.0" prefWidth="105.0" text="NOWY TOR" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="101.0" layoutY="99.0" text="ID">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="RaceID" layoutX="74.0" layoutY="118.0" prefHeight="25.0" prefWidth="66.0" />
+                        <TextField fx:id="RaceName" layoutX="55.0" layoutY="198.0" prefHeight="25.0" prefWidth="105.0" />
+                        <Label layoutX="82.0" layoutY="179.0" text="NAZWA">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TabPane fx:id="tabPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="525.0" prefWidth="690.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab fx:id="tabFormula1" text="FORMULA1">
+                           <content>
+                              <TableView fx:id="F1Table" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F7D00D;">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem fx:id="F1Delete" mnemonicParsing="false" text="Delete" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </content></Tab>
+                      <Tab fx:id="tabFormula2" text="FORMULA2">
+                           <content>
+                              <TableView fx:id="F2Table" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F7D00D;">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem fx:id="F2Delete" mnemonicParsing="false" text="Delete" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </content></Tab>
+                        <Tab fx:id="tabTeams" text="TEAMS">
+                           <content>
+                              <TableView fx:id="TeamsTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F7D00D;">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem fx:id="TeamsDelete" mnemonicParsing="false" text="Delete" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </content></Tab>
+                        <Tab fx:id="tabDrivers" text="DRIVERS">
+                           <content>
+                              <TableView fx:id="DriverTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F7D00D;">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem fx:id="DrivresDelete" mnemonicParsing="false" text="Delete" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </content></Tab>
+                        <Tab fx:id="tabRaces" text="RACES">
+                           <content>
+                              <TableView fx:id="RaceTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F7D00D;">
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem fx:id="RacesDelete" mnemonicParsing="false" text="Delete" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </content></Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
